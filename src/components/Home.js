@@ -1,7 +1,10 @@
-import React from "react";
+import React, {Component} from "react";
 
-function Home(props) {
-  return (
+
+class Home extends Component {
+  render(props) {
+    return (
+
     <div id="home">
       <h1 style={{ color: props.color }}>
         {props.username} is a Web Developer from {props.city}
@@ -9,5 +12,5 @@ function Home(props) {
     </div>
   );
 }
-
+}
 export default Home;
